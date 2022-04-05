@@ -1,0 +1,63 @@
+@use '/src/variables';
+.spinners {
+  margin-top: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner1 {
+  height: 50px;
+  width: 50px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 6px;
+  animation: spin1 infinite 1s linear;
+  border-color: variables.$purple;
+  border-left-color: transparent;
+  position: relative;
+}
+@keyframes spin1 {
+  0% {
+    transform: rotate(-180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.spinner2 {
+  height: 26px;
+  width: 26px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 6px;
+  animation: spin2 infinite 1s linear;
+  border-color: variables.$green;
+  border-left-color: transparent;
+  position: relative;
+  bottom: -50px;
+  left: 12px;
+}
+@keyframes spin2 {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+.spinner1::after {
+  content: ' ';
+  position: absolute;
+  top: 45%;
+  left: -30%;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent variables.$purple transparent transparent;
+  transform: rotate(42deg);
+}

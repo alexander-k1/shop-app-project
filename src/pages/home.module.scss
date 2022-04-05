@@ -1,0 +1,19 @@
+@use '/src/variables';
+@use '/src/error' as err;
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 410px);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  margin: auto 2rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.error {
+  @include err.error;
+}

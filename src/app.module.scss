@@ -1,0 +1,6 @@
+@use '/src/variables';
+.app {
+  min-height: 100vh;
+  background-color: variables.$grey;
+  font-family: variables.$font;
+}

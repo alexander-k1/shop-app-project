@@ -1,0 +1,58 @@
+@use '/src/variables';
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(239, 212, 247, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: -1;
+}
+.showModal {
+  visibility: visible;
+  z-index: 2;
+}
+.modalContent {
+  width: fit-content;
+  height: fit-content;
+  background-color: variables.$purple;
+  padding: 1rem;
+  border-radius: 5px;
+  color: variables.$purple;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.action {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+.goToBasket {
+  text-decoration: none;
+}
+.continueBtn {
+  cursor: pointer;
+}
+.goToBasket,
+.continueBtn {
+  width: 30%;
+  padding: 0.4rem;
+  background-color: variables.$purple;
+  color: variables.$green-tint;
+  border-radius: 3px;
+  border: 1px solid variables.$green-tint;
+  // font-size: 1rem;
+  // font-weight: bold;
+  // text-transform: uppercase;
+}
+.info {
+  background-color: variables.$green-tint;
+  padding: 0.4rem;
+  border-radius: 3px;
+}

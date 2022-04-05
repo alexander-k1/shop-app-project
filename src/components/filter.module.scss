@@ -1,0 +1,19 @@
+@use '/src/variables';
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.filterOption {
+  margin: 1rem;
+  cursor: pointer;
+  color: variables.$brown;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-bottom: 3px solid transparent;
+}
+.currentCategory {
+  color: variables.$purple;
+  border-bottom: 3px solid variables.$purple;
+}

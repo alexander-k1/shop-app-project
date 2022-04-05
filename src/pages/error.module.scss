@@ -1,0 +1,14 @@
+@use '/src/variables';
+@use '/src/error' as err;
+
+.error {
+  @include err.error;
+  flex-direction: column;
+}
+.link {
+  text-decoration: none;
+  display: block;
+  color: variables.$purple;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}

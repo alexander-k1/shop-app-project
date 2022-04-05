@@ -1,0 +1,54 @@
+@use '/src/variables';
+.basket {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.basketList {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  color: variables.$purple;
+}
+.total {
+  width: 36rem;
+  display: flex;
+  justify-content: space-between;
+}
+.totalLabel {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.totalSum {
+  font-weight: bold;
+}
+.controlBtns {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+}
+.paymentBtn,
+.clearBtn {
+  width: 30%;
+  padding: 0.4rem;
+  background-color: variables.$purple;
+  color: variables.$white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

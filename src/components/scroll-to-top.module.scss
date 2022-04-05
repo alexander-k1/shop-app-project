@@ -1,0 +1,13 @@
+@use '/src/variables';
+
+.scrollToTop {
+  position: fixed;
+  color: variables.$purple;
+  bottom: 2rem;
+  right: 0.5rem;
+  visibility: hidden;
+  cursor: pointer;
+}
+.chevronVisible {
+  visibility: visible;
+}

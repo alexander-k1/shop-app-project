@@ -1,0 +1,39 @@
+@use '/src/variables';
+.product {
+  justify-self: center;
+  align-self: center;
+  border: 3px solid variables.$green;
+  border-radius: 5px;
+}
+.product:hover .productImg {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+.productImg {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s all ease;
+}
+.productImgContainer {
+  overflow: hidden;
+}
+.productInfo {
+  background-color: variables.$green;
+  padding: 1.5rem 1rem;
+  color: variables.$brown;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.link {
+  text-decoration: none;
+  color: variables.$purple;
+  background-color: variables.$green-tint;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  padding: 0.5rem;
+}

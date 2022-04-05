@@ -1,0 +1,87 @@
+@use '/src/variables';
+@use '/src/error' as err;
+
+.error {
+  @include err.error;
+  flex-direction: column;
+}
+.link {
+  text-decoration: none;
+  display: block;
+  color: variables.$purple;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  @media screen and (min-width: 960px) {
+    flex-direction: row;
+  }
+  border: 0px solid transparent;
+  border-radius: 10px;
+  background-color: variables.$white;
+  padding: 2rem;
+}
+.productImgContainer {
+  overflow: hidden;
+}
+.productImg {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.productContainer {
+  padding: 2rem 10vw;
+}
+.title {
+  font-size: 1.7rem;
+  color: variables.$purple;
+  padding-bottom: 2rem;
+}
+.productInfo {
+  color: variables.$brown;
+}
+.description {
+  color: variables.$brown;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  line-height: 0.2rem;
+}
+.productQuantity {
+  border: 2px solid variables.$purple;
+  width: 3rem;
+  font-size: 1.2rem;
+  margin-right: 0;
+  margin-left: 1rem;
+}
+.kgs {
+  margin-right: 1rem;
+  margin-left: 0.2rem;
+}
+.addToBasket {
+  border: 0px solid transparent;
+  border-radius: 5px;
+  background-color: variables.$green;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: variables.$purple;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.addToBasket[disabled] {
+  color: variables.$grey;
+  cursor: auto;
+}
+.price {
+  font-weight: bold;
+}
+.buying {
+  display: flex;
+  align-items: center;
+}

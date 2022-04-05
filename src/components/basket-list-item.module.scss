@@ -1,0 +1,66 @@
+@use '/src/variables';
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  width: 34rem;
+  border-bottom: 5px solid variables.$purple;
+  padding: 1rem;
+  background-color: variables.$white;
+  border-radius: 5px;
+}
+.productImg {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  display: block;
+}
+.productImgContainer {
+  overflow: hidden;
+}
+.quantityControls {
+  align-items: center;
+}
+.incOrDec {
+  display: flex;
+}
+.productName {
+  color: variables.$purple;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.product {
+  display: flex;
+}
+.productDetails {
+  margin-left: 2rem;
+}
+.productDetails,
+.quantityControls {
+  display: flex;
+  flex-direction: column;
+  height: 3.5rem;
+  justify-content: space-between;
+}
+.quantity {
+  width: 3rem;
+  text-align: center;
+}
+.incOrDec {
+  display: flex;
+  width: 8rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.plus,
+.minus {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: variables.$purple;
+}
+.remove {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: variables.$brown;
+}
